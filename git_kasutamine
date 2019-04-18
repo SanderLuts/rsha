@@ -15,3 +15,17 @@ cd *kaust
 
 4. 
 git init
+
+5. #kontroll
+git remote -v
+
+6.
+git add *fail*
+
+7.
+git commit -m "comment"
+
+8.
+git push -uf rsha master
+
+
