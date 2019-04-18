@@ -1,0 +1,17 @@
+*root
+(sudo) apt install git
+
+*user
+1.
+git config --global user.name "user.name"
+git config --global user.email "user@mail.com"
+git config --global core.editor nano
+
+2.
+mkdir *kaust*
+
+3.
+cd *kaust
+
+4. 
+git init
