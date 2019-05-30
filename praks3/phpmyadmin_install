@@ -1,0 +1,10 @@
+#!/bin/bash
+phpadm=$( dpkg --list | grep -c "phpmyadmin" )
+if [ $phpadm -eq 0 ]
+then
+echo "installime phpmyadmin"
+apt install phpmyadmin -y
+else
+echo "phpmyadmin on installitud"
+systemctl status phpmyadmin
+fi
