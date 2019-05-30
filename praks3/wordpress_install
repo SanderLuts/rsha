@@ -1,0 +1,5 @@
+#!/bin/bash
+sh apache_install
+sh php_install
+sh mysql-server_install
+sh phpmyadmin_install

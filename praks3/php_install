@@ -7,5 +7,4 @@ if [ $php5 -eq 0 ]
 		apt install php5 -y
 else
                 echo "php on juba paigaldatud"
-                systemctl status php5
 fi
