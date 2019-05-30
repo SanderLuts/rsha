@@ -1,0 +1,11 @@
+#!/bin/bash
+php5=$(which php5 | grep -c "")
+echo $php5
+if [ $php5 -eq 0 ]
+        then
+                echo "php paigaldus"
+		apt install php5 -y
+else
+                echo "php on juba paigaldatud"
+                systemctl status php5
+fi
