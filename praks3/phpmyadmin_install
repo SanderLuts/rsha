@@ -6,5 +6,5 @@ echo "installime phpmyadmin"
 apt install phpmyadmin -y
 else
 echo "phpmyadmin on installitud"
-systemctl status phpmyadmin
+dpkg --list | grep "phpmyadmin"
 fi
