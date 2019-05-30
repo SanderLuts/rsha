@@ -3,3 +3,7 @@ sh apache_install #kontrollib kas apache2 on olemas, kui ei ole siis installib
 sh php_install #kontrollib kas php on olemas, kui ei ole siis installib
 sh mysql-server_install #kävitab mysql skripti mis kontrollib kas mysql on olemas, kui ei ole siis installib
 sh phpmyadmin_install #käivitab phpmyadmin install skripti, mis kontrollib kas phpmyadmin on olemas, kui ei ole siis insallib
+cd /var/www/html/ #vahetab kausta
+wget https://wordpress.org/latest.tar.gz #laeb alla kõige uuema wordpressi
+tar xpf latest.tar.gz #pakib lahti tar faili
+chown -R www-data:www-data /var/www/html #vahetab html kausta õigused
