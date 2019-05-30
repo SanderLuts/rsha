@@ -1,0 +1,12 @@
+#!/bin/bash
+apache=$(dpkg-query -W -f='${Status}' apache2 2>/dev/null | grep -c "ok installed")
+if [ $apache -eq 0 ] #kui apache ei ole paigaldatud, siis paigaldab
+then
+	echo "Apache2 paigaldus"
+	apt install apache2 -y
+
+elif [ $apache -eq 1 ]
+then
+	echo "Apache2 on paigaldatud"
+	systemctl status apache2
+fi
