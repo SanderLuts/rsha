@@ -4,7 +4,7 @@ if [ $apache -eq 0 ] #kui apache ei ole paigaldatud, siis paigaldab
 then
 	echo "Apache2 paigaldus"
 	apt install apache2 -y
-
+	service apache2 start
 elif [ $apache -eq 1 ]
 then
 	echo "Apache2 on paigaldatud"
