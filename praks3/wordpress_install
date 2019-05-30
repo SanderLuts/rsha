@@ -1,5 +1,5 @@
 #!/bin/bash
-sh apache_install
-sh php_install
-sh mysql-server_install
-sh phpmyadmin_install
+sh apache_install #kontrollib kas apache2 on olemas, kui ei ole siis installib
+sh php_install #kontrollib kas php on olemas, kui ei ole siis installib
+sh mysql-server_install #kävitab mysql skripti mis kontrollib kas mysql on olemas, kui ei ole siis installib
+sh phpmyadmin_install #käivitab phpmyadmin install skripti, mis kontrollib kas phpmyadmin on olemas, kui ei ole siis insallib
