@@ -7,3 +7,4 @@ cd /var/www/html/ #vahetab kausta
 wget https://wordpress.org/latest.tar.gz #laeb alla kõige uuema wordpressi
 tar xpf latest.tar.gz #pakib lahti tar faili
 chown -R www-data:www-data /var/www/html #vahetab html kausta õigused
+mv /var/www/html/index.html /var/www/html/index.html.old
