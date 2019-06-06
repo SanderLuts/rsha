@@ -7,6 +7,7 @@ cd /var/www/html/ #vahetab kausta
 wget https://wordpress.org/latest.tar.gz #laeb alla kõige uuema wordpressi
 tar xpf latest.tar.gz #pakib lahti tar faili
 chown -R www-data:www-data /var/www/html #vahetab html kausta õigused
+<<<<<<< HEAD
 rm latest.tar.gz
 rm index.html
 touch /etc/apache2/site-available/wordpress.conf
@@ -18,3 +19,6 @@ echo "Listen 80
 </VirtualHost>"
 a2ensite wordpress.conf
 service apache2 reload
+=======
+mv /var/www/html/index.html /var/www/html/index.html.old
+>>>>>>> 8b3219b3da9987b3db3b8af5e5b307b991009f2a
