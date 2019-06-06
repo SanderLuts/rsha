@@ -1,0 +1,4 @@
+#!/bin/bash
+#LEMP-stack install script
+
+apt update && apt -upgrade -y
