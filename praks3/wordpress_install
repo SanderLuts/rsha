@@ -12,8 +12,9 @@ rm index.html
 touch /etc/apache2/site-available/wordpress.conf
 echo "Listen 80
 <VirtualHost *:80>
-DocumentRoot "/var/www/html/wordpress"
-ServerName www.naidis.ee
-</VirtualHost>" 1> /etc/apache2/sites-available/wordpress.conf
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html/wordpress
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+</VirtualHost>"
 a2ensite wordpress.conf
 service apache2 reload
